@@ -1,6 +1,6 @@
 {
     "domain": "bluetti_bt",
-    "name": "Bluetti BT",
+    "name": "Bluetti BT Encrypted",
     "bluetooth": [
         { "local_name": "AC60*" },
         { "local_name": "AC70*" },
@@ -24,5 +24,5 @@
     "iot_class": "local_polling",
     "issue_tracker": "https://github.com/Patrick762/hassio-bluetti-bt/issues",
     "requirements": [],
-    "version": "0.1.4"
+    "version": "0.1.5e"
 }
