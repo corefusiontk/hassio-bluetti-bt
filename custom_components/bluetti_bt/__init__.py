@@ -40,10 +40,10 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     device_name = entry.data.get(CONF_NAME)
     use_controls = entry.data.get(CONF_USE_CONTROLS)
     polling_interval = entry.data.get(CONF_POLLING_INTERVAL, 60)
-    persistent_conn = entry.data.get(CONF_PERSISTENT_CONN, False)
+    persistent_conn = entry.data.get(CONF_PERSISTENT_CONN, True)
     polling_timeout = entry.data.get(CONF_POLLING_TIMEOUT, 120)
     max_retries = entry.data.get(CONF_MAX_RETRIES, 5)
-    use_encryption = entry.data.get(CONF_ENCRYPTION, False)
+    use_encryption = entry.data.get(CONF_ENCRYPTION, True)
 
     if address is None:
         return False
